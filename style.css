@@ -507,7 +507,7 @@ main{
     }
 }
 
-a{
+.card a{
     padding: 8px 32px;
     border-radius: 25px;
     border: none;
@@ -521,22 +521,22 @@ a{
 
 }
 
-a[data-type-car="suvs"]{
+.card a[data-type-car="suvs"]{
     color: var(--bg-cyan);
 
 }
 
-a[data-type-car="sedans"]{
+.card a[data-type-car="sedans"]{
     color: var(--bg-gold);
     
 }
 
-a[data-type-car="luxury"]{
+.card a[data-type-car="luxury"]{
     color: var(--bg-green);
     
 }
 
-a[data-type-car="suvs"]:hover, a[data-type-car="suvs"]:focus {
+.card a[data-type-car="suvs"]:hover, .card a[data-type-car="suvs"]:focus {
     color: var(--primary-clr);
     background-color: var(--bg-cyan);
     border: 2px solid white;
@@ -545,7 +545,7 @@ a[data-type-car="suvs"]:hover, a[data-type-car="suvs"]:focus {
 
 }
 
-a[data-type-car="sedans"]:hover, a[data-type-car="sedans"]:focus{
+.card a[data-type-car="sedans"]:hover, .card a[data-type-car="sedans"]:focus{
     background-color: var(--bg-gold);
     color: var(--primary-clr);
     border: 2px solid white;
@@ -553,7 +553,7 @@ a[data-type-car="sedans"]:hover, a[data-type-car="sedans"]:focus{
     outline: none;
 }
 
-a[data-type-car="luxury"]:hover, a[data-type-car="luxury"]:focus{
+.card a[data-type-car="luxury"]:hover, .card a[data-type-car="luxury"]:focus{
     background-color: var(--bg-green);
     color: var(--primary-clr);
     border: 2px solid white;
