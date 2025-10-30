@@ -413,7 +413,31 @@ template {
         
     }
 
-    .card-text{
+   
+
+}
+
+body{
+    min-height: 100dvh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+main{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .card-text{
         font-family: var(--ff-body);
         font-size: 15px;
         line-height: 165%;
@@ -423,7 +447,6 @@ template {
         margin: 0;
     }
 
-}
 
 
 .card-info{
@@ -435,25 +458,21 @@ template {
 }
 
 
-body{
-    min-height: 100vh;
-    min-width: 100vw;
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
-main{
-    min-height: 100vh;
-    min-width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 7.5rem;
+main {
+  height: 100%;
+  margin: 5rem;
 }
+    
 
 .three-card-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 920px;
     max-height: 500px;
     border-radius: 12px;
 
@@ -467,6 +486,7 @@ main{
 
      @media(max-width: 600px){
         max-width: 327px;
+        max-height: 50%;
      }
 
 }
@@ -481,6 +501,7 @@ main{
     color: var(--primary-clr);
     padding: 3rem;
     border-radius: 12px 0px 0px 12px;
+    max-width: 300px;
 
 
 
